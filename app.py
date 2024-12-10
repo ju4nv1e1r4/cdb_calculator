@@ -41,10 +41,10 @@ def calcular_rendimento_liquido(dias_vencimento, taxa_bruta, cdi, montante_inves
     rendimento_percentual_cdi *= 100
 
     return {
-        "Rendimento Percentual Líquido": f"{rendimento_percentual_liquido:.2f}%",
+        "Rendimento Percentual Bruto": f"{rendimento_percentual_liquido:.2f}%",
         "Valor Absoluto a ser Resgatado": f"R${montante_liquido:,.2f}",
         "Rendimento Absoluto": f"R${rendimento_liquido:,.2f}",
-        "Rendimento em Percentual do CDI": f"{rendimento_percentual_cdi:.2f}%"
+        "Rendimento em Percentual Líquido": f"{rendimento_percentual_cdi:.2f}%"
     }
 
 # Interface Streamlit
