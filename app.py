@@ -60,10 +60,10 @@ if st.sidebar.button("Calcular"):
     resultado = calcular_rendimento_liquido(dias_vencimento, taxa_bruta, cdi, montante_investido)
     
     st.header("Resultados")
-    st.write(f"**Rendimento Percentual Líquido:** {resultado['Rendimento Percentual Bruto']}")
+    st.write(f"**Rendimento Percentual Bruto:** {resultado['Rendimento Percentual Bruto']}")
     st.write(f"**Valor Absoluto a ser Resgatado:** {resultado['Valor Absoluto a ser Resgatado']}")
     st.write(f"**Rendimento Absoluto:** {resultado['Rendimento Absoluto']}")
-    st.write(f"**Rendimento em Percentual do CDI:** {resultado['Rendimento em Percentual Líquido']}")
+    st.write(f"**Rendimento em Percentual Líquido:** {resultado['Rendimento em Percentual Líquido']}")
 
     st.subheader("Detalhes")
     st.write(f"- **Dias para vencimento:** {dias_vencimento}")
